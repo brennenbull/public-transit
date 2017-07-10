@@ -10,6 +10,13 @@ nav{
   height: 5vh;
   background: #eeefed;
   border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .span{
+    display: inline-block;
+  }
 }
 .map-container{
   display: flex;

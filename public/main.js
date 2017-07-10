@@ -421,4 +421,122 @@ function initMap() {
    map: map
   });
 
+  var decodedBus24Path = google.maps.geometry.encoding.decodePath("s`qqF~xy_SdGcJsJuMjCkD~G`JCh]y@Cm@g@e@u@eP{TlQ}VxAoCHi@@eINaODid@HwmBEuA]iEGmLHaw@Dsg@f^E@|`@kIC@_a@hI@GzqA?n[PFBhd@}@`@s@x@g@t@]`AYfBCzABfARfAx@nA`Ad@`@FHrHAjF@fMFx[Gp\\Y~BD`Caq@C?m]F_`@C_u@Hs]w@gCm@mCYuENogB");
+
+  var decodedBus24Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus24 = new google.maps.Polyline({
+   path: decodedBus24Path,
+   levels: decodedBus24Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus25Path = google.maps.geometry.encoding.decodePath("o_uqFjru_S@mjB\\qf@R}^z@eIaAiNuOWGjwBFxsAduAFMau@Hk^w@oOk@gLAwPGw\\Vw\\NwKbgCX\\fF?zcABlpA?v}BzNC~DwEbH_HxGwJrJuQlF_LzCoOfBwMHk^?wl@PmDNu^^uLz@uEO_HI_q@xe@NNlb@g@vDqKtLuCtAoLQuEjBeAtGBdRMlW`A~@th@\\");
+
+  var decodedBus25Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus25 = new google.maps.Polyline({
+   path: decodedBus25Path,
+   levels: decodedBus25Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus26Path = google.maps.geometry.encoding.decodePath("obwqFd{r_StFfAvLBlUChVCrVBhsAHfuANvAv@l]B`BqAj@_Ala@?dHa@iBe@iBa@aBiAyA{@{[?mCd@_BfBqGJkKHgLl@aDYcBoAsa@]aCp@yIOkB~@}BNqJDcFjAi@rBB|LG|M?`}@KzmAaGJBm|@wCKsB~BkKC?{\\yFI?xFnF?B~MpK?Klh@rO?");
+
+  var decodedBus26Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus26 = new google.maps.Polyline({
+   path: decodedBus26Path,
+   levels: decodedBus26Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus27Path = google.maps.geometry.encoding.decodePath("wsqqFh{u_S~\\L@iCrz@C`i@Mx^Gx@KOvBLbN@tLgLGoAiAhF}KdBaHzAkKbBIo@vE\\xAOlLHtPGjXAjNAhL@zV~IE?bYeJ?ol@BcID@zLaSBCc[~\\WNiUjAjAnZBlNBA~FtOFtDE?l@hM?bG?");
+
+  var decodedBus27Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus27 = new google.maps.Polyline({
+   path: decodedBus27Path,
+   levels: decodedBus27Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus28Path = google.maps.geometry.encoding.decodePath("{upqF|xz_StDGxAgAfBaCj@c@dBKhLE~H@nRMNdI{{@GFlOpS?Bg_BEx~B`IOEbFhGBdALhIArAiAbNMb@g@jB_D??NuB?uG[{Dw@aEa@iDCqO@}HwH@CtHtXB~Ar@^hDLhA");
+
+  var decodedBus28Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus28 = new google.maps.Polyline({
+   path: decodedBus28Path,
+   levels: decodedBus28Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus29Path = google.maps.geometry.encoding.decodePath("klpqFhuz_SDoo@yHH|RG@{Gvf@Dr@NtAbDfDsB~ByBd@r@~@HbL`@?zq@eI?cIECqb@AgDByABoBGgBUyBwDtCnGgFjAvB");
+
+  var decodedBus29Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus29 = new google.maps.Polyline({
+   path: decodedBus29Path,
+   levels: decodedBus29Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus30Path = google.maps.geometry.encoding.decodePath("qwkqFn_q_SByUBy`@wHCIdw@A{v@gG?o@hAFlt@}RLCts@qXNcAbAg@j@BzvAI`z@@bGkTMuQAiS?@vV?yF}HB@aO");
+
+  var decodedBus30Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus30 = new google.maps.Polyline({
+   path: decodedBus30Path,
+   levels: decodedBus30Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus31Path = google.maps.geometry.encoding.decodePath("{pgqFfee`SC{y@Hqy@?w[Em\\");
+
+  var decodedBus31Levels = decodeLevels('BBBBB');
+
+  var bus31 = new google.maps.Polyline({
+   path: decodedBus31Path,
+   levels: decodedBus31Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+  var decodedBus32Path = google.maps.geometry.encoding.decodePath("upxqF|c{_SxbAEJ{c@EmBgA}@yES}TC?bELXbF@hBAXK\\sEmZCHi^AgGW_Ac@a@yACiDGU[Oe@A_JeLI");
+
+  var decodedBus32Levels = decodeLevels('BBBBBBBBBBBBBBBBBBBBBBBB');
+
+  var bus32 = new google.maps.Polyline({
+   path: decodedBus32Path,
+   levels: decodedBus32Levels,
+   strokeColor: "#ffbb02",
+   strokeOpacity: 1.0,
+   strokeWeight: 2,
+   map: map
+  });
+
+
 }

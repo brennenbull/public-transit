@@ -36,8 +36,11 @@ nav {
   right: -70px; }
 
 .legend {
+  position: relative;
+  bottom: 100px;
   margin-left: 20px;
-  height: 700px;
+  padding: 7px;
+  height: 500px;
   width: 300px;
   background: #bdc3c7;
   /* fallback for old browsers */
@@ -45,6 +48,50 @@ nav {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, rgba(189, 195, 199, 0.3), rgba(44, 62, 80, 0.9));
   border: 5px solid white;
-  border-radius: 1%; }
+  border-radius: 1%;
+  color: white; }
+  .legend .bus {
+    display: inline-block;
+    height: 5px;
+    width: 40px;
+    background-color: #ffe100; }
+  .legend .light-rail {
+    display: inline-block;
+    height: 5px;
+    width: 40px;
+    background-color: #ff0000; }
+  .legend .layer {
+    margin-top: 20px; }
+  .legend .layer-gradient {
+    box-sizing: border-box;
+    height: 20px;
+    width: 202px;
+    border: 1px solid black;
+    padding: 0; }
+    .legend .layer-gradient .color {
+      margin: 0;
+      border: .5px solid black;
+      box-sizing: border-box;
+      height: 100%;
+      width: calc(200px / 5);
+      float: left; }
+    .legend .layer-gradient .color-1 {
+      background: #FFFFFF; }
+    .legend .layer-gradient .color-2 {
+      background: #00FFCB; }
+    .legend .layer-gradient .color-3 {
+      background: #0BC5E8; }
+    .legend .layer-gradient .color-4 {
+      background: #007EFF; }
+    .legend .layer-gradient .color-5 {
+      background: #0023F5; }
+  .legend .range {
+    width: 220px;
+    position: relative; }
+    .legend .range .range-start, .legend .range .range-end {
+      font-size: .7rem; }
+    .legend .range .range-end {
+      position: absolute;
+      right: 0; }
 
 /*# sourceMappingURL=style.css.map */

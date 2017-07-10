@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Public Tranist Equality</title>
+    <title>Public Transit Equality</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" defer>
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
@@ -22,18 +22,25 @@
     </nav>
     <div class="map-container">
       <div class="legend">
-        <h3 class="title"></h3>
-        <p class="description"></p>
-        <h4>Transit Lines</h4>
-        <span class='buss'></span>
+        <h3 class="title">Ethnic Diversity vs Transit line Routes</h3>
+        <p class="description">Denver transit lines mapped over Ethnic Diversity as reported by census blocks</p>
+        <h5>Transit Lines</h5>
+        <span class="line">Bus Lines</span>
+        <span class='bus'></span>
+        <br>
+        <span class="line">Light Rail</span>
         <span class="light-rail"></span>
-        <h4 class='layer'></h4>
+        <h5 class='layer'>Diversity</h5>
         <div class="layer-gradient">
           <div class="color color-1"></div>
           <div class="color color-2"></div>
           <div class="color color-3"></div>
           <div class="color color-4"></div>
           <div class="color color-5"></div>
+        </div>
+        <div class='range'>
+          <span class="range-start">Less Diverse</span>
+          <span class="range-end">More Diverse</span>
         </div>
       </div>
       <div id="carousel-map" class="carousel slide" data-ride="carousel">

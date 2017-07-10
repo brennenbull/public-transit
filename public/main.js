@@ -14,7 +14,8 @@ function initMap() {
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
     center: denver,
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    scrollwheel: false
   });
 
   let racelayer = new google.maps.FusionTablesLayer({
@@ -32,25 +33,25 @@ function initMap() {
       where: "'PCT_WHITE' < 40 AND 'PCT_WHITE' > 1 ",
       polygonOptions: {
         fillColor: '#0023F5',
-        fillOpacity: 0.4
+        fillOpacity: 0.3
       }
     },{
       where: "'PCT_WHITE' < 60 AND 'PCT_WHITE' > 40 ",
       polygonOptions: {
         fillColor: '#007EFF',
-        fillOpacity: 0.4
+        fillOpacity: 0.3
       }
     },{
       where: "'PCT_WHITE' < 80 AND 'PCT_WHITE' > 60 ",
       polygonOptions: {
         fillColor: '#0BC5E8',
-        fillOpacity: 0.4
+        fillOpacity: 0.3
       }
     },{
       where: "'PCT_WHITE' <= 100 AND 'PCT_WHITE' >= 80 ",
       polygonOptions: {
         fillColor: '#00FFCB',
-        fillOpacity: 0.4
+        fillOpacity: 0.3
       }
     }]
   });

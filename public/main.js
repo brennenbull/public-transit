@@ -31,10 +31,10 @@ let raceObj = {
   rangeEnd: 'More Diverse',
   colorTiles: {
     color1: '#FFFFFF',
-    color2: '#0023F5',
-    color3: '#007EFF',
-    color4: '#0BC5E8',
-    color5: '#00FFCB'
+    color2: '#00FFCB',
+    color3: '#0BC5E8',
+    color4: '#007EFF',
+    color5: '#0023F5'
   }
 };
 

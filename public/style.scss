@@ -23,6 +23,7 @@ nav{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-right: 50px;
   left: 0;
   right: 0;
   top: 0;
@@ -49,7 +50,7 @@ nav{
 .legend{
   position: relative;
   bottom: 100px;
-  margin-left: 20px;
+  margin-left: 50px;
   padding: 7px;
   height: 500px;
   width: 300px;
@@ -59,17 +60,20 @@ nav{
   border: 5px solid white;
   border-radius: 1%;
   color: white;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
   .bus{
     display: inline-block;
     height: 5px;
     width: 40px;
     background-color: #ffe100;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
   }
   .light-rail{
     display: inline-block;
     height: 5px;
     width: 40px;
     background-color: #ff0000;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
   }
 
   .layer{

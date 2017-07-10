@@ -11,7 +11,7 @@ nav{
   background: #eeefed;
   border-bottom: 2px solid black;
 }
-.container{
+.map-container{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -24,9 +24,18 @@ nav{
   background-size: cover;
 }
 
-#map{
+#map-diversity{
   height: 700px;
   width: 600px;
   border: 5px solid white;
   border-radius: 1%;
+}
+
+.carousel-control-prev {
+    left: -65px;
+}
+
+.carousel-control-next-icon{
+  position: relative;
+  left: 70px;
 }

@@ -21,13 +21,28 @@
     <nav>
     </nav>
     <div class="map-container">
+      <div class="legend">
+        <h3 class="title"></h3>
+        <p class="description"></p>
+        <h4>Transit Lines</h4>
+        <span class='buss'></span>
+        <span class="light-rail"></span>
+        <h4 class='layer'></h4>
+        <div class="layer-gradient">
+          <div class="color color-1"></div>
+          <div class="color color-2"></div>
+          <div class="color color-3"></div>
+          <div class="color color-4"></div>
+          <div class="color color-5"></div>
+        </div>
+      </div>
       <div id="carousel-map" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <div id="map-diversity"></div>
+            <div id="map-diversity" class="map"></div>
           </div>
           <div class="carousel-item">
-            <div id="map-population"></div>
+            <div id="map-population" class="map"></div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carousel-map" role="button" data-slide="prev">

@@ -1,4 +1,4 @@
-function drawlines(map){
+function drawlines(map, lightRailColor, BusLineColor){
   var decodedLightRail1Path = google.maps.geometry.encoding.decodePath('kheqFnko_SqGnFeBxDeAhGcAlG_AjLS~DA`EGpF@bMXlJ\rDV`CDt@FxAH`GIdCg@tFeAtI}BlJwAlFgFjMwF|NeEdL_FnLyEzHoJnJ}EfG{ElH_J~JiEdF{EpFcE`F]fBElA^pAr@pFo@rBaDt@cJ`AiHh@uEfA_C~@oGzCcBnAeDzCgCjBoDpB{DdBcEpBmFlBmIpDeDjB}DtBaHtCaJ`FgJhFmGdDgJhGwBz@gDdAmKhBqJjCkIzBsHhBoFDsGB}CAyLj@eEfBkAu@CkCH_G@oPYyEaAiCgBoBs@kCe@uA}IeM_HcKiFeIuHqKyDgFvE}HXgAw@iAyD{FoBgCuDaFsJoNkG_JuGoJuFwH}FaIwEcGiFC');
 
   var decodedLightRail1Levels = decodeLevels("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
@@ -6,7 +6,7 @@ function drawlines(map){
   var lightRail1 = new google.maps.Polyline({
    path: decodedLightRail1Path,
    levels: decodedLightRail1Levels,
-   strokeColor: "#FF0000",
+   strokeColor: lightRailColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -19,7 +19,7 @@ function drawlines(map){
   var lightRail2 = new google.maps.Polyline({
    path: decodedLightRail2Path,
    levels: decodedLightRail2Levels,
-   strokeColor: "#FF0000",
+   strokeColor: lightRailColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -33,7 +33,7 @@ function drawlines(map){
   var lightRail3 = new google.maps.Polyline({
    path: decodedLightRail3Path,
    levels: decodedLightRail3Levels,
-   strokeColor: "#FF0000",
+   strokeColor: lightRailColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -46,7 +46,7 @@ function drawlines(map){
   var lightRail4 = new google.maps.Polyline({
    path: decodedLightRail4Path,
    levels: decodedLightRail4Levels,
-   strokeColor: "#FF0000",
+   strokeColor: lightRailColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -59,7 +59,7 @@ function drawlines(map){
   var lightRail5 = new google.maps.Polyline({
    path: decodedLightRail5Path,
    levels: decodedLightRail5Levels,
-   strokeColor: "#FF0000",
+   strokeColor: lightRailColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -72,7 +72,7 @@ function drawlines(map){
   var bus1 = new google.maps.Polyline({
    path: decodedBus1Path,
    levels: decodedBus1Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -85,7 +85,7 @@ function drawlines(map){
   var bus2 = new google.maps.Polyline({
    path: decodedBus2Path,
    levels: decodedBus2Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -98,7 +98,7 @@ function drawlines(map){
   var bus3 = new google.maps.Polyline({
    path: decodedBus3Path,
    levels: decodedBus3Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -111,7 +111,7 @@ function drawlines(map){
   var bus4 = new google.maps.Polyline({
    path: decodedBus4Path,
    levels: decodedBus4Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -124,7 +124,7 @@ function drawlines(map){
   var bus5 = new google.maps.Polyline({
    path: decodedBus5Path,
    levels: decodedBus5Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -137,7 +137,7 @@ function drawlines(map){
   var bus6 = new google.maps.Polyline({
    path: decodedBus6Path,
    levels: decodedBus6Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -150,7 +150,7 @@ function drawlines(map){
   var bus7 = new google.maps.Polyline({
    path: decodedBus7Path,
    levels: decodedBus7Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -163,7 +163,7 @@ function drawlines(map){
   var bus8 = new google.maps.Polyline({
    path: decodedBus8Path,
    levels: decodedBus8Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -176,7 +176,7 @@ function drawlines(map){
   var bus9 = new google.maps.Polyline({
    path: decodedBus9Path,
    levels: decodedBus9Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -189,7 +189,7 @@ function drawlines(map){
   var bus10 = new google.maps.Polyline({
    path: decodedBus10Path,
    levels: decodedBus10Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -202,7 +202,7 @@ function drawlines(map){
   var bus11 = new google.maps.Polyline({
    path: decodedBus11Path,
    levels: decodedBus11Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -215,7 +215,7 @@ function drawlines(map){
   var bus12 = new google.maps.Polyline({
    path: decodedBus12Path,
    levels: decodedBus12Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -228,7 +228,7 @@ function drawlines(map){
   var bus13 = new google.maps.Polyline({
    path: decodedBus13Path,
    levels: decodedBus13Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -241,7 +241,7 @@ function drawlines(map){
   var bus14 = new google.maps.Polyline({
    path: decodedBus14Path,
    levels: decodedBus14Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -254,7 +254,7 @@ function drawlines(map){
   var bus15 = new google.maps.Polyline({
    path: decodedBus15Path,
    levels: decodedBus15Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -267,7 +267,7 @@ function drawlines(map){
   var bus16 = new google.maps.Polyline({
    path: decodedBus16Path,
    levels: decodedBus16Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -280,7 +280,7 @@ function drawlines(map){
   var bus17 = new google.maps.Polyline({
    path: decodedBus17Path,
    levels: decodedBus17Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -293,7 +293,7 @@ function drawlines(map){
   var bus18 = new google.maps.Polyline({
    path: decodedBus18Path,
    levels: decodedBus18Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -306,7 +306,7 @@ function drawlines(map){
   var bus19 = new google.maps.Polyline({
    path: decodedBus19Path,
    levels: decodedBus19Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -319,7 +319,7 @@ function drawlines(map){
   var bus20 = new google.maps.Polyline({
    path: decodedBus20Path,
    levels: decodedBus20Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -332,7 +332,7 @@ function drawlines(map){
   var bus21 = new google.maps.Polyline({
    path: decodedBus21Path,
    levels: decodedBus21Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -345,7 +345,7 @@ function drawlines(map){
   var bus22 = new google.maps.Polyline({
    path: decodedBus22Path,
    levels: decodedBus22Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -358,7 +358,7 @@ function drawlines(map){
   var bus23 = new google.maps.Polyline({
    path: decodedBus23Path,
    levels: decodedBus23Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -371,7 +371,7 @@ function drawlines(map){
   var bus24 = new google.maps.Polyline({
    path: decodedBus24Path,
    levels: decodedBus24Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -384,7 +384,7 @@ function drawlines(map){
   var bus25 = new google.maps.Polyline({
    path: decodedBus25Path,
    levels: decodedBus25Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -397,7 +397,7 @@ function drawlines(map){
   var bus26 = new google.maps.Polyline({
    path: decodedBus26Path,
    levels: decodedBus26Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -410,7 +410,7 @@ function drawlines(map){
   var bus27 = new google.maps.Polyline({
    path: decodedBus27Path,
    levels: decodedBus27Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -423,7 +423,7 @@ function drawlines(map){
   var bus28 = new google.maps.Polyline({
    path: decodedBus28Path,
    levels: decodedBus28Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -436,7 +436,7 @@ function drawlines(map){
   var bus29 = new google.maps.Polyline({
    path: decodedBus29Path,
    levels: decodedBus29Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -449,7 +449,7 @@ function drawlines(map){
   var bus30 = new google.maps.Polyline({
    path: decodedBus30Path,
    levels: decodedBus30Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -462,7 +462,7 @@ function drawlines(map){
   var bus31 = new google.maps.Polyline({
    path: decodedBus31Path,
    levels: decodedBus31Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map
@@ -475,7 +475,7 @@ function drawlines(map){
   var bus32 = new google.maps.Polyline({
    path: decodedBus32Path,
    levels: decodedBus32Levels,
-   strokeColor: "#ffbb02",
+   strokeColor: BusLineColor,
    strokeOpacity: 1.0,
    strokeWeight: 2,
    map: map

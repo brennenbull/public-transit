@@ -13,7 +13,7 @@ nav {
 
 .map-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   left: 0;
@@ -32,8 +32,19 @@ nav {
 .carousel-control-prev {
   left: -65px; }
 
-.carousel-control-next-icon {
-  position: relative;
-  left: 70px; }
+.carousel-control-next {
+  right: -70px; }
+
+.legend {
+  margin-left: 20px;
+  height: 700px;
+  width: 300px;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, rgba(189, 195, 199, 0.3), rgba(44, 62, 80, 0.9));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgba(189, 195, 199, 0.3), rgba(44, 62, 80, 0.9));
+  border: 5px solid white;
+  border-radius: 1%; }
 
 /*# sourceMappingURL=style.css.map */

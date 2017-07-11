@@ -9,7 +9,7 @@ function decodeLevels(encodedLevelsString) {
 }
 
 let popObj = {
-  title: 'Population Density vs Transit line Routes',
+  title: 'Population Density vs Transit Lines',
   description: 'Denver transit lines mapped over population density as reported by census blocks.',
   layer: 'Population',
   rangeStart: '0',
@@ -24,7 +24,7 @@ let popObj = {
 };
 
 let raceObj = {
-  title: 'Ethnic Diversity vs Transit line Routes',
+  title: 'Ethnic Diversity vs Transit Lines',
   description: 'Denver transit lines mapped over ethnic diversity as reported by census blocks.',
   layer: 'Diversity',
   rangeStart: 'Less Diverse',
@@ -42,27 +42,18 @@ $('#map-population').data(popObj);
 $('#map-diversity').data(raceObj);
 
 function buildLegend(ele){
-  let title = ele.data().title;
-  let description = ele.data().description;
-  let layer = ele.data().layer;
-  let rangestart = ele.data().rangeStart;
-  let rangeend = ele.data().rangeEnd;
-  let color01 = ele.data().colorTiles.color1;
-  let color02 = ele.data().colorTiles.color2;
-  let color03 = ele.data().colorTiles.color3;
-  let color04 = ele.data().colorTiles.color4;
-  let color05 = ele.data().colorTiles.color5;
+  let {title, description, layer, rangeStart, rangeEnd, color1, color2, color3, color4, color5} = ele.data();
   let $legend = $('.legend');
   $legend.find('.title').text(title);
   $legend.find('.description').text(description);
   $legend.find('.layer').text(layer);
-  $legend.find('.range-start').text(rangestart);
-  $legend.find('.range-end').text(rangeend);
-  $legend.find('.color-1').css('background', `${color01}`);
-  $legend.find('.color-2').css('background',` ${color02}`);
-  $legend.find('.color-3').css('background', `${color03}`);
-  $legend.find('.color-4').css('background', `${color04}`);
-  $legend.find('.color-5').css('background', `${color05}`);
+  $legend.find('.range-start').text(rangeStart);
+  $legend.find('.range-end').text(rangeEnd);
+  $legend.find('.color-1').css('background', `${color1}`);
+  $legend.find('.color-2').css('background',` ${color2}`);
+  $legend.find('.color-3').css('background', `${color3}`);
+  $legend.find('.color-4').css('background', `${color4}`);
+  $legend.find('.color-5').css('background', `${color5}`);
 }
 
 $('.carousel').carousel({
